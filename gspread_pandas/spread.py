@@ -744,7 +744,7 @@ class Spread:
         self.update_cells(
             start=start,
             end=end,
-            vals=[str(val) for row in df_list for val in row],
+            vals=[val for row in df_list for val in row],
             raw_columns=raw_columns,
         )
 
